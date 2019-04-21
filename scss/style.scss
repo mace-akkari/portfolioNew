@@ -1,0 +1,26 @@
+body {
+    color: black;
+    margin: 0;
+    .content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.heading {
+    //repeated
+    border: 6px solid black;
+    text-align: center;
+}
+
+footer {
+    //repeated
+    border: 6px solid black;
+    text-align: center;
+}
