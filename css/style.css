@@ -1,18 +1,36 @@
 body {
   color: black;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Alegreya' , sans-serif; }
   body .content {
     width: 90%;
     margin-left: auto;
     margin-right: auto; }
+    body .content ul {
+      padding: 0; }
 
 * {
   box-sizing: border-box;
-  text-decoration: none; }
+  text-decoration: none;
+  list-style-type: none; }
 
 .heading {
   border: 6px solid black;
   text-align: center; }
+
+.projects_contianer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px; }
+
+.projects_img {
+  display: grid;
+  text-align: center; }
+
+.projects_pic {
+  max-width: 40%;
+  overflow: hidden;
+  display: inline-block; }
 
 footer {
   border: 6px solid black;
