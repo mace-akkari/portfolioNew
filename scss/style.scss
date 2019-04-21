@@ -1,26 +1,48 @@
 body {
     color: black;
     margin: 0;
+    font-family: 'Alegreya' , sans-serif;
     .content {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    ul {
+        padding: 0;
+        }
     }
 }
 
 * {
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .heading {
-    //repeated
+    //repeated1
     border: 6px solid black;
     text-align: center;
 }
 
+.projects_contianer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+  } 
+
+  .projects_img {
+    display: grid;
+    text-align: center;
+  }
+  
+  .projects_pic {
+    max-width: 40%;
+    overflow: hidden;
+    display: inline-block;
+  }
+
 footer {
-    //repeated
+    //repeated1
     border: 6px solid black;
     text-align: center;
 }
