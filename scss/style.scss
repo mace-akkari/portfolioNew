@@ -2,6 +2,7 @@ body {
     color: black;
     margin: 0;
     font-family: 'Alegreya' , sans-serif;
+    text-align: center;
     .content {
         width: 90%;
         margin-left: auto;
@@ -30,6 +31,13 @@ body {
     grid-gap: 8px;
   } 
 
+  .project{
+    border: 3px solid #eee;
+    h4{
+      font-size: 2em;
+    }
+  }
+
   .projects_img {
     display: grid;
     text-align: center;
@@ -39,6 +47,36 @@ body {
     max-width: 40%;
     overflow: hidden;
     display: inline-block;
+  }
+  .mobile_view {
+    max-width: 85%;
+  }
+  .web_view {
+    max-width: 90%;
+    border: 2px solid grey;
+  }
+
+.skills_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+} 
+
+
+.skills_item, .projects_pic {
+  text-align: center; 
+}
+
+.skills_item, .logo {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
   }
 
 footer {
