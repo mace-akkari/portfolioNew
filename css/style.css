@@ -18,17 +18,18 @@ body {
 .heading {
   background-image: url(../images/skills/logo.svg);
   background-size: 100%;
-  height: 200px;
+  height: 210px;
   background-repeat: no-repeat;
   border: 6px solid black;
-  text-align: center; }
+  align-content: center;
+  display: flex;
+  justify-content: center; }
   .heading .heading-name {
     padding: 20px;
-    border: 2px solid #C0C0C0;
+    border: 3px solid #C0C0C0;
     color: black;
     background-color: #F8F8F8;
-    opacity: .8;
-    display: inline-block; }
+    opacity: .8; }
 
 .projects_contianer {
   display: grid;
@@ -36,9 +37,12 @@ body {
   grid-gap: 20px; }
 
 .project {
-  border: 3px solid #eee; }
+  border: 5px dotted #eee; }
   .project h4 {
     font-size: 2em; }
+  .project p {
+    margin-left: 7px;
+    margin-right: 7px; }
 
 .projects_img {
   display: grid;
