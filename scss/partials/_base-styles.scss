@@ -1,0 +1,23 @@
+body {
+    color: black;
+    margin: 0;
+    font-family: 'Alegreya' , sans-serif;
+    text-align: center;
+    background-color: #E8E8E8;
+
+    .content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        ul {
+            padding: 0;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
