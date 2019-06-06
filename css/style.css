@@ -2,7 +2,8 @@ body {
   color: black;
   margin: 0;
   font-family: 'Alegreya' , sans-serif;
-  text-align: center; }
+  text-align: center;
+  background-color: #E8E8E8; }
   body .content {
     width: 90%;
     margin-left: auto;
@@ -37,9 +38,9 @@ body {
   grid-gap: 20px; }
 
 .project {
-  border: 5px dotted #eee; }
+  border: 5px dotted #FFFFFF; }
   .project h4 {
-    font-size: 2em; }
+    font-size: 1.5em; }
   .project p {
     margin-left: 7px;
     margin-right: 7px; }
@@ -47,6 +48,9 @@ body {
 .projects_img {
   display: grid;
   text-align: center; }
+  @media only screen and (min-width: 434px) {
+    .projects_img {
+      grid-template-columns: repeat(2, 1fr); } }
 
 .projects_pic {
   max-width: 40%;
@@ -55,6 +59,12 @@ body {
 
 .mobile_view {
   max-width: 85%; }
+  @media only screen and (min-width: 1025px) {
+    .mobile_view {
+      max-width: 70%; } }
+  @media only screen and (min-width: 1025px) {
+    .mobile_view {
+      max-width: 50%; } }
 
 .web_view {
   max-width: 90%;
@@ -64,6 +74,14 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px; }
+  @media only screen and (min-width: 434px) {
+    .skills_container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 12px; } }
+  @media only screen and (min-width: 1025px) {
+    .skills_container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 12px; } }
 
 .skills_item, .projects_pic {
   text-align: center; }
