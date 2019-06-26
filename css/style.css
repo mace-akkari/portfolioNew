@@ -10,6 +10,9 @@ body {
     margin-right: auto; }
     body .content ul {
       padding: 0; }
+  body h3 {
+    font-size: 1.5em;
+    text-decoration: underline wavy #D0D0D0; }
 
 * {
   box-sizing: border-box;
