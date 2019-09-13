@@ -57,27 +57,30 @@
     --fade-time: 0.5s;
 }
 
-.container {
-    max-width: 760px;
-    margin: auto;
-    border: #fff solid 3px;
+.img_container {
+    margin: 0 20px;
+    border: rgb(168, 167, 167) solid 3px;
     background: #fff;
 }
 
-.main-img img,
-.imgs img {
-    width: 100%;
+.main-img img{
+    margin-top: 5px;
+    width: 80%;
 }
 
 .imgs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
+    margin: 2px;
+    img {
+        width: 100%;
+        cursor: pointer;
+ 
+       
+    }
 }
 
-.imgs img {
-    cursor: pointer;
-}
 
 /* Fade in animation */
 @keyframes fadeIn {
@@ -91,20 +94,20 @@
     animation: fadeIn var(--fade-time) ease-in 1 forwards;
 }
 
-/* Media Queries */
-@media (max-width: 600px) {
+@media (min-width : 434px) {
     .imgs {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width : 900px) {
+        .imgs {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 }
 
-
-
-
-
 .mobile_view {
     max-width: 85%;
-    @media only screen and (min-width : 1025px) {
+    @media only screen and (min-width : 434px) {
         max-width: 70%;
       }
     @media only screen and (min-width : 1025px) {
