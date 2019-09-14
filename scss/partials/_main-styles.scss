@@ -59,11 +59,9 @@
 
 .img_container {
     margin: 0 20px;
-    border: rgb(168, 167, 167) solid 3px;
-    background: #fff;
 }
 
-.main-img img{
+.main-img img {
     margin-top: 5px;
     width: 80%;
 }
@@ -71,16 +69,17 @@
 .imgs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
+    grid-gap: 3px;
     margin: 2px;
+    border: rgb(168, 167, 167) solid 3px;
+    background: #fff;
+
     img {
         width: 100%;
+        margin: 2px;
         cursor: pointer;
- 
-       
     }
 }
-
 
 /* Fade in animation */
 @keyframes fadeIn {
@@ -94,11 +93,12 @@
     animation: fadeIn var(--fade-time) ease-in 1 forwards;
 }
 
-@media (min-width : 434px) {
+@media (min-width: 434px) {
     .imgs {
         grid-template-columns: repeat(3, 1fr);
     }
-    @media (min-width : 900px) {
+
+    @media (min-width: 900px) {
         .imgs {
             grid-template-columns: repeat(4, 1fr);
         }
@@ -107,12 +107,14 @@
 
 .mobile_view {
     max-width: 85%;
-    @media only screen and (min-width : 434px) {
+
+    @media only screen and (min-width: 434px) {
         max-width: 70%;
-      }
-    @media only screen and (min-width : 1025px) {
+    }
+
+    @media only screen and (min-width: 1025px) {
         max-width: 50%;
-      }
+    }
 }
 
 .web_view {
@@ -124,14 +126,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+
     @media only screen and (min-width: 434px) {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 12px;
-      }
-    @media only screen and (min-width : 1025px) {
+    }
+
+    @media only screen and (min-width: 1025px) {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 12px;
-      }
+    }
 }
 
 .skills_item, .projects_pic {
