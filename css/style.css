@@ -57,8 +57,7 @@ body {
 
 .projects_pic {
   max-width: 40%;
-  overflow: hidden;
-  display: inline-block; }
+  overflow: hidden; }
 
 :root {
   /* Set fade in duration */
@@ -75,9 +74,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3px;
-  margin: 2px;
+  margin: auto;
   border: #a8a7a7 solid 3px;
-  background: #fff; }
+  background: #fff;
+  width: 80%; }
   .imgs img {
     width: 100%;
     margin: 2px;
@@ -97,19 +97,6 @@ body {
 @media (min-width: 434px) and (min-width: 900px) {
   .imgs {
     grid-template-columns: repeat(4, 1fr); } }
-.mobile_view {
-  max-width: 85%; }
-  @media only screen and (min-width: 434px) {
-    .mobile_view {
-      max-width: 70%; } }
-  @media only screen and (min-width: 1025px) {
-    .mobile_view {
-      max-width: 50%; } }
-
-.web_view {
-  max-width: 90%;
-  border: 2px solid grey; }
-
 .skills_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -123,7 +110,7 @@ body {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 12px; } }
 
-.skills_item, .projects_pic {
+.skills_item {
   text-align: center; }
 
 .skills_item, .logo {
