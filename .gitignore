@@ -3,3 +3,4 @@ home
 loop.js
 .sass-cache
 *.css.map
+.DS_Store
