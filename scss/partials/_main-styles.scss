@@ -61,21 +61,27 @@
 }
 
 .main-img img {
+    border: rgb(168, 167, 167) solid 3px;
     margin-top: 5px;
-    width: 80%;
+    width: 100%;
 }
 
 .imgs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 3px;
     margin: auto;
     border: rgb(168, 167, 167) solid 3px;
     background: #fff;
     width: 80%;
+    li {
+        overflow: hidden;
+        text-align: center;
+    }
     img {
+        display: inline-block;
         width: 100%;
-        margin: 2px;
+        height: 100%;
         cursor: pointer;
     }
 }
@@ -93,6 +99,9 @@
 }
 
 @media (min-width: 434px) {
+    .main-img img{
+        width: 80%;
+    }
     .imgs {
         grid-template-columns: repeat(3, 1fr);
     }
