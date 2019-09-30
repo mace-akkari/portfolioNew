@@ -25,3 +25,31 @@ function gallary(el) {
 }
 
 document.querySelectorAll('.img_container').forEach(el => gallary(el))
+
+
+// const pics = [
+//   {
+//     title: 'pic1',
+//     path: './images/portfolio/react-crypto1.png'
+//   },
+//   {
+//     title: 'pic2',
+//     path: './images/portfolio/react-crypto2.png'
+//   }
+// ]
+// let str = '<ul>'
+
+// pics.forEach(function(pic) {
+//   str += '<li>'+ pic + '</li>';
+// }); 
+
+// str += '</ul>';
+// document.getElementsByClassName("imgsimgs").innerHTML = str;
+
+//=====
+
+// function that goes over the file name to generate li. 
+
+// create an array of objects- 
+// const hostname : https://mace-akkari.github.io/portfolioNew/
+// document window to get title 
