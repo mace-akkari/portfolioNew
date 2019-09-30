@@ -67,17 +67,21 @@
 }
 
 .imgs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3px;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     border: rgb(168, 167, 167) solid 3px;
     background: #fff;
     width: 80%;
+    margin-bottom: 4px;
+
     li {
         overflow: hidden;
-        text-align: center;
+        align-items: center;
+        flex: 1 0 22%;
+        margin: 2px;
     }
+
     img {
         display: inline-block;
         width: 100%;
@@ -99,17 +103,8 @@
 }
 
 @media (min-width: 434px) {
-    .main-img img{
+    .main-img img {
         width: 80%;
-    }
-    .imgs {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    @media (min-width: 900px) {
-        .imgs {
-            grid-template-columns: repeat(4, 1fr);
-        }
     }
 }
 
