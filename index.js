@@ -40,7 +40,7 @@ document.querySelectorAll('.img_container').forEach(el => gallary(el))
 // let str = '<ul>'
 
 // pics.forEach(function(pic) {
-//   str += '<li>'+ pic + '</li>';
+//   str += `<img ${pic}>`  ;
 // }); 
 
 // str += '</ul>';
