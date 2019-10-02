@@ -90,9 +90,11 @@ body {
     height: 100%;
     cursor: pointer; }
 
-.imgsimgs {
+.imgs2 {
   background-color: blue;
   border: 6px solid black; }
+  .imgs2 img {
+    width: 450px; }
 
 /* Fade in animation */
 @keyframes fadeIn {
