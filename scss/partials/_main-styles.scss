@@ -89,9 +89,12 @@
         cursor: pointer;
     }
 }
-.imgsimgs {
+.imgs2 {
     background-color: blue;
-    border: 6px solid black
+    border: 6px solid black;
+    img {
+        width: 450px;
+    }
 }
 /* Fade in animation */
 @keyframes fadeIn {
