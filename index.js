@@ -1,9 +1,9 @@
 function gallary(el) {
   const current = el.querySelector('.current');
-  const img = el.querySelectorAll('.imgs-container img');
+  const img = el.querySelectorAll('.imgs-container .screen-shots');
   const opacity = 0.6;
 
-  img[0].style.opacity = opacity;
+  //img[0].style.opacity = opacity;
   img.forEach((el) => el.addEventListener('click', imgClick))
 
   function imgClick(e) {
@@ -27,29 +27,45 @@ function gallary(el) {
 document.querySelectorAll('.img_container').forEach(el => gallary(el))
 
 
-// const pics = [
-//   {
-//     title: 'pic1',
-//     path: './images/portfolio/react-crypto1.png'
-//   },
-//   {
-//     title: 'pic2',
-//     path: './images/portfolio/react-crypto2.png'
-//   }
-// ]
-// let str = '<ul>'
+//=========================================
 
-// pics.forEach(function(pic) {
-//   str += `<img ${pic}>`  ;
-// }); 
+function generatePicList(path, length) {
 
-// str += '</ul>';
-// document.getElementsByClassName("imgsimgs").innerHTML = str;
+  const pics = []
+  for (let n = 0; n <= length; n++) {
+    pics.push({
+      title: 'pic1',
+      path: `${path}${n}.png`
+    });
+  };
 
-//=====
+  return pics
+};
 
-// function that goes over the file name to generate li. 
+function createImgList(targetSelector, paths) {
+  const parent = document.querySelector(targetSelector);
+  const container = document.createElement('ul');
+  container.className = 'imgs_container'
 
-// create an array of objects- 
-// const hostname : https://mace-akkari.github.io/portfolioNew/
-// document window to get title 
+  paths.forEach((pic) => {
+    const li = document.createElement('li');
+    const img = document.createElement('img');
+    img.className = 'screen-shots'
+
+    img.src = pic.path
+
+    li.appendChild(img)
+    container.appendChild(li)
+  });
+
+  parent.appendChild(container)
+};
+
+createImgList('.imgs2', generatePicList('images/portfolio/cryptoReact/react-crypto', 7));
+// createImgList('.imgs2', generatePicList('images/portfolio/', 8));
+// createImgList('.imgs2', generatePicList('images/portfolio/', 8));
+// createImgList('.imgs2', generatePicList('images/portfolio/', 8));
+// createImgList('.imgs2', generatePicList('images/portfolio/', 8));
+// createImgList('.imgs2', generatePicList('images/portfolio/', 8));
+// createImgList('.imgs2', generatePicList('images/portfolio/', 8));
+// createImgList('.imgs2', generatePicList('images/portfolio/', 8));
