@@ -92,9 +92,6 @@
 .imgs2 {
     background-color: blue;
     border: 6px solid black;
-    img {
-        width: 450px;
-    }
 }
 /* Fade in animation */
 @keyframes fadeIn {
@@ -109,7 +106,7 @@
 }
 
 @media only screen and (min-width: 434px) {
-    .main-img img {
+    .main-img .screen-shots {
         width: 80%;
     }
      // .imgs  {
