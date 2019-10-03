@@ -45,7 +45,7 @@ function generatePicList(path, length) {
 function createImgList(targetSelector, paths) {
   const parent = document.querySelector(targetSelector);
   const container = document.createElement('ul');
-  container.className = 'imgs_container'
+  container.className = 'imgs-container'
 
   paths.forEach((pic) => {
     const li = document.createElement('li');
