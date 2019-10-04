@@ -61,8 +61,9 @@ function createImgList(targetSelector, paths) {
   parent.appendChild(container)
 };
 
-createImgList('.imgs2', generatePicList('images/portfolio/cryptoReact/react-crypto', 7));
-// createImgList('.imgs2', generatePicList('images/portfolio/', 8));
+// createImgList('.cryptoReact', generatePicList('images/portfolio/cryptoReact/react-crypto', 7));
+createImgList('.cryptoVue', generatePicList('images/portfolio/cryptoReact/react-crypto', 7));
+// createImgList('.maceFitness', generatePicList('images/portfolio/maceFitness/fitness-pic', 8));
 // createImgList('.imgs2', generatePicList('images/portfolio/', 8));
 // createImgList('.imgs2', generatePicList('images/portfolio/', 8));
 // createImgList('.imgs2', generatePicList('images/portfolio/', 8));
