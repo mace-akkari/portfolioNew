@@ -85,6 +85,7 @@ body {
     flex: 1 0 22%;
     margin: 2px; }
   .imgs-container .screen-shots {
+    border: 2px solid black;
     display: inline-block;
     width: 100%;
     height: 100%;
