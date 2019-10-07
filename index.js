@@ -1,6 +1,6 @@
 function gallary(el) {
   const current = el.querySelector('.current');
-  const img = el.querySelectorAll('.imgs-container .screen-shots');
+  const img = el.querySelectorAll('.screen-shots');
   const opacity = 0.6;
 
   //img[0].style.opacity = opacity;
