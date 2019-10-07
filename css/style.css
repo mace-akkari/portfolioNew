@@ -99,8 +99,12 @@ body {
   animation: fadeIn var(--fade-time) ease-in 1 forwards; }
 
 @media only screen and (min-width: 434px) {
-  .main-img .screen-shots {
-    width: 80%; } }
+  .main-img img,
+  .screen-shots {
+    width: 80%; }
+
+  .screen-shots {
+    flex: 1 0 34%; } }
 .skills_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
