@@ -1,9 +1,12 @@
 function gallary(el) {
   const current = el.querySelector('.current');
   const img = el.querySelectorAll('.screen-shots');
-  const opacity = 0.6;
+  const opacity = 0.4;
 
-  //img[0].style.opacity = opacity;
+  if (img.length){
+    img[0].style.opacity = opacity
+  }
+
   img.forEach((el) => el.addEventListener('click', imgClick))
 
   function imgClick(e) {
@@ -24,7 +27,7 @@ function gallary(el) {
   }
 }
 
-document.querySelectorAll('.img_container').forEach(el => gallary(el))
+
 
 
 //=========================================
@@ -61,9 +64,11 @@ function createImgList(targetSelector, paths) {
   parent.appendChild(container)
 };
 
-//createImgList('.cryptoVue', generatePicList('images/portfolio/cryptoReact/react-crypto', 7));
+createImgList('.cryptoReact', generatePicList('images/portfolio/cryptoReact/react-crypto', 7));
 createImgList('.cryptoApi', generatePicList('images/portfolio/cryptoApi/crypto-pic', 9));
 // createImgList('.maceFitness', generatePicList('images/portfolio/maceFitness/maceFitness-pic', 8));
 // createImgList('.vue.V2x', generatePicList('images/portfolio/vue.V2x/vue2-pic', 8));
 // createImgList('.vue.V3x', generatePicList('images/portfolio/vue.V3x/vue3-pic', 8));
 // createImgList('.sampleCv', generatePicList('images/portfolio/sampleCv/sampleCv-pic', 8));
+
+document.querySelectorAll('.img_container').forEach(el => gallary(el))
