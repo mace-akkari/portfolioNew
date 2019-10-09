@@ -67,8 +67,8 @@ function createImgList(targetSelector, paths) {
 createImgList('.cryptoReact', generatePicList('images/portfolio/cryptoReact/react-crypto', 7));
 createImgList('.cryptoApi', generatePicList('images/portfolio/cryptoApi/crypto-pic', 9));
 // createImgList('.maceFitness', generatePicList('images/portfolio/maceFitness/maceFitness-pic', 8));
-// createImgList('.vue.V2x', generatePicList('images/portfolio/vue.V2x/vue2-pic', 8));
-// createImgList('.vue.V3x', generatePicList('images/portfolio/vue.V3x/vue3-pic', 8));
+// createImgList('.vueV2x', generatePicList('images/portfolio/vue.V2x/vue2-pic', 8));
+createImgList('.vueV3x', generatePicList('images/portfolio/vue.V3x/vue3-pic', 8));
 // createImgList('.sampleCv', generatePicList('images/portfolio/sampleCv/sampleCv-pic', 8));
 
 document.querySelectorAll('.img_container').forEach(el => gallary(el))
